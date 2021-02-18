@@ -6,6 +6,15 @@ class User {
    this.password = password;
    this.email = email;
    this.birthday = birthday;
+   this.address = address;
  }
 
+ getAddress(){
+   if(this.address === 'undefined'){
+     return "keine Adresse angegeben";
+   }
+   else{
+     return this.address;
+   }
+ }
 }
